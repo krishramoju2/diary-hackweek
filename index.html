@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Smart Voice Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-light">
+  <div class="container">
+    <h1>🎤 Ask Me Anything</h1>
+
+    <div class="controls">
+      <button id="start-btn">🎙️ Start Speaking</button>
+      <select id="font-selector">
+        <option value="Arial">Arial</option>
+        <option value="Courier New">Courier New</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Brush Script MT">Brush Script MT</option>
+        <option value="Comic Sans MS">Comic Sans</option>
+      </select>
+      <select id="bg-selector">
+        <option value="theme-light">Light</option>
+        <option value="theme-dark">Dark</option>
+        <option value="theme-blue">Ocean</option>
+        <option value="theme-pink">Rose</option>
+      </select>
+    </div>
+
+    <div class="filters">
+      <input type="text" id="search-bar" placeholder="🔍 Search Q&A...">
+      <select id="topic-filter">
+        <option value="">All Topics</option>
+        <option value="cybersecurity">Cybersecurity</option>
+        <option value="stock market">Stock Market</option>
+        <option value="space craft">Space Craft</option>
+        <option value="submarine">Submarine</option>
+        <option value="ai">AI</option>
+        <option value="medicine">Medicine</option>
+        <option value="climate change">Climate Change</option>
+      </select>
+      <select id="sort-order">
+        <option value="newest">Newest First</option>
+        <option value="oldest">Oldest First</option>
+      </select>
+    </div>
+
+    <p id="status">Say a topic to begin (e.g., "Cybersecurity")...</p>
+    <div id="response"></div>
+
+    <h2>🕘 Timeline</h2>
+    <div id="timeline"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
