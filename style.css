@@ -1,0 +1,68 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+#start-btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#start-btn:hover {
+  background-color: #388e3c;
+}
+
+#response {
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.controls select, .filters select, .filters input {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.timeline-entry {
+  background: #f3f3f3;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  position: relative;
+}
+
+.bookmarked {
+  border-left: 6px solid gold;
+}
+
+.timeline-entry button.bookmark-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Themes */
+.theme-light { background: #ffffff; color: #000; }
+.theme-dark { background: #121212; color: #eee; }
+.theme-blue { background: #e0f7fa; color: #004d40; }
+.theme-pink { background: #ffe4e1; color: #880e4f; }
